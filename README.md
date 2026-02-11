@@ -20,8 +20,9 @@ Customer churn refers to customers discontinuing a service. In this project, we 
 - `main.py`: Main execution script
 
 ## 📊 Visual Results
+
 ### Confusion Matrix
-![Confusion Matrix](results/figures/confusion_matrix.png)
+![Confusion Matrix](results/confusion_matrix.png)
 
 ### ROC Curve
-![ROC Curve](results/figures/roc_curve.png)
+![ROC Curve](results/roc_curve.png)
