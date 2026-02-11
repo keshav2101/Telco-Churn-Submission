@@ -68,6 +68,27 @@ For each model, we report:
 | **XGBoost** | **0.844** |
 | **Logistic Regression** | **0.804** |
 
+## ▶️ How to Run
+
+### Option 1: Run the ML Pipeline (Scripts)
+1. **Install dependencies:**
+   ```bash
+   pip install -r requirements.txt
+2. **Run the pipeline:**
+   ```bash
+python main.py
+
+## Option 2: 📘 Explore the Analysis (Notebook)
+
+Open `telco_churn_analysis(20.ipynb` in Jupyter or Kaggle to view the detailed Exploratory Data Analysis and step-by-step model development.
+
+## ✅ Key Takeaways
+
+- **Consistency:** Normalizing service categories reduced feature noise significantly.  
+- **Ensemble Power:** Combining XGBoost and LightGBM provided the most robust separation.  
+- **Recall Priority:** Focused on maximizing churn recall to assist business retention strategies.
+
+  
  ## 📁 Project Structure
 ```text
 telco-churn-project/
@@ -91,6 +112,8 @@ telco-churn-project/
 ├── LICENSE                     # MIT License
 ├── README.md                   # Project documentation & final report
 ├── main.py                     # Execution script for the full pipeline
+├── telco_churn_analysis.ipynb  # Updated Kaggle Notebook (EDA)
 ├── processed_data.csv          # Cleaned and encoded data output
 └── requirements.txt            # Project dependencies
+
 
