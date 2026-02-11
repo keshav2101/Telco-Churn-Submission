@@ -73,17 +73,24 @@ For each model, we report:
 telco-churn-project/
 │
 ├── data/
-│   └── Telco.csv
+│   └── Telco.csv               # Raw dataset from Kaggle
 │
-├── src/
-│   └── preprocessing.py
+├── src/                        # Source code for the ML pipeline
+│   ├── __init__.py             # Makes src a Python package
+│   ├── data_loader.py          # Script for data ingestion
+│   ├── preprocessing.py        # Data cleaning & feature engineering
+│   ├── data_processor.py       # Scaling & Train-test split logic
+│   ├── models.py               # Model architectures (XGB, RF, LR)
+│   └── evaluation.py           # Metric calculation & plot generation
 │
-├── results/
-│   ├── confusion_matrix.png
-│   └── roc_curve.png
+├── results/                    # Output directory
+│   ├── figures/                # All Confusion Matrices & ROC Curves
+│   └── metrics/                # Text reports & summary.csv
 │
-├── main.py
-├── requirements.txt
-└── README.md
-
+├── .gitattributes              # Git LFS/line-ending configuration
+├── LICENSE                     # MIT License
+├── README.md                   # Project documentation & final report
+├── main.py                     # Execution script for the full pipeline
+├── processed_data.csv          # Cleaned and encoded data output
+└── requirements.txt            # Project dependencies
 
